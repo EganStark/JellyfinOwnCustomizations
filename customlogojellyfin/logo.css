@@ -1,25 +1,23 @@
-/* Hide the small default icon */
+/* Hide the small Jellyfin icon */
 .imgLogoIcon {
     display: none !important;
 }
 
-/* Hide Jellyfin text */
+/* Hide the Jellyfin text */
 .pageTitleWithLogo .pageTitle {
     display: none !important;
 }
 
-/* Make room for your wide logo */
+/* Show your new logo properly */
 .pageTitleWithLogo {
-    background-image: url("https://cdn.jsdelivr.net/gh/EganStark/JellyfinOwnCustomizations@main/customlogojellyfin/sinsinema.png") !important;
-    background-repeat: no-repeat !important;
-    background-position: left center !important;
-    background-size: 170px auto !important;
-    min-height: 40px !important;
-    width: 190px !important;
+    background: url("https://cdn.jsdelivr.net/gh/EganStark/JellyfinOwnCustomizations@main/customlogojellyfin/sinsinema2.png") no-repeat left center !important;
+    background-size: 150px auto !important;
+    min-height: 38px !important;
+    width: 170px !important;
     display: inline-block !important;
 }
 
-/* Optional: hide admin/sidebar logo so it doesn't distort */
+/* Hide stretched sidebar logo */
 .adminDrawerLogo img {
     display: none !important;
 }
