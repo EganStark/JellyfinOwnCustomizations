@@ -1,14 +1,11 @@
-/* Replace top-left Jellyfin logo */
 .imgLogoIcon {
   content: url("https://cdn.jsdelivr.net/gh/EganStark/JellyfinOwnCustomizations@main/customlogojellyfin/sinsinema.png") !important;
 }
 
-/* Replace sidebar/admin logo if shown */
 .adminDrawerLogo img {
   content: url("https://cdn.jsdelivr.net/gh/EganStark/JellyfinOwnCustomizations@main/customlogojellyfin/sinsinema.png") !important;
 }
 
-/* Replace title area logo */
 .pageTitleWithLogo {
   background-image: url("https://cdn.jsdelivr.net/gh/EganStark/JellyfinOwnCustomizations@main/customlogojellyfin/sinsinema.png") !important;
   background-repeat: no-repeat !important;
@@ -16,7 +13,6 @@
   background-size: 140px auto !important;
 }
 
-/* Hide the Jellyfin text */
 .pageTitleWithLogo .pageTitle {
   display: none !important;
 }
