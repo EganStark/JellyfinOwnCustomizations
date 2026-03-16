@@ -1,31 +1,25 @@
-/* Top-left icon */
-
+/* Hide the small default icon */
 .imgLogoIcon {
-    content: url("https://cdn.jsdelivr.net/gh/EganStark/JellyfinOwnCustomizations@main/customlogojellyfin/sinsinema.png") !important;
-    height: 28px !important;
-    width: auto !important;
+    display: none !important;
 }
 
-/* Sidebar logo */
-
-.adminDrawerLogo img {
-    content: url("https://cdn.jsdelivr.net/gh/EganStark/JellyfinOwnCustomizations@main/customlogojellyfin/sinsinema.png") !important;
-    height: 32px !important;
-    width: auto !important;
+/* Hide Jellyfin text */
+.pageTitleWithLogo .pageTitle {
+    display: none !important;
 }
 
-/* Header logo */
-
+/* Make room for your wide logo */
 .pageTitleWithLogo {
     background-image: url("https://cdn.jsdelivr.net/gh/EganStark/JellyfinOwnCustomizations@main/customlogojellyfin/sinsinema.png") !important;
     background-repeat: no-repeat !important;
     background-position: left center !important;
-    background-size: 120px auto !important;
-    padding-left: 130px !important;
+    background-size: 170px auto !important;
+    min-height: 40px !important;
+    width: 190px !important;
+    display: inline-block !important;
 }
 
-/* Hide Jellyfin text */
-
-.pageTitleWithLogo .pageTitle {
+/* Optional: hide admin/sidebar logo so it doesn't distort */
+.adminDrawerLogo img {
     display: none !important;
 }
