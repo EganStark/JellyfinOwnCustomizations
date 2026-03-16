@@ -1,0 +1,38 @@
+services:
+  jellyfin:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: jellyfin-custom:latest
+    container_name: jellyfin
+    restart: unless-stopped
+
+    environment:
+      - PUID=${PUID:-1000}
+      - PGID=${PGID:-1000}
+      - TZ=${TZ:-UTC}
+
+    volumes:
+      # Persistent Jellyfin configuration
+      - ${CONFIG_PATH:-./config}:/config
+      # Transcoding cache (can be tmpfs for speed)
+      - ${CACHE_PATH:-./cache}:/cache
+      # Media library – add more volume entries for additional libraries
+      - ${MEDIA_PATH:-./media}:/media:ro
+
+    ports:
+      - "${JELLYFIN_PORT:-8096}:8096"
+      - "${JELLYFIN_HTTPS_PORT:-8920}:8920"
+
+    # Optional: enable hardware acceleration (uncomment as needed)
+    # devices:
+    #   - /dev/dri:/dev/dri          # Intel / AMD VAAPI
+    # group_add:
+    #   - render                     # Intel / AMD render group
+
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost:8096/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
