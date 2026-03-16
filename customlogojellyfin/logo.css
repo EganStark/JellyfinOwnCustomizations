@@ -1,23 +1,23 @@
-/* hide small jellyfin icon */
+/* Replace default Jellyfin logo */
+
 .imgLogoIcon {
-    display: none !important;
+
+    content: url("https://raw.githubusercontent.com/EganStark/JellyfinOwnCustomizations/main/customlogojellyfin/sinsinema2.png") !important;
+
+    height: 38px !important;
+    width: auto !important;
+
+    margin-left: 10px !important;
 }
 
-/* hide jellyfin text */
+/* Hide Jellyfin text beside logo */
+
 .pageTitleWithLogo .pageTitle {
     display: none !important;
 }
 
-/* show your custom logo */
-.pageTitleWithLogo {
-    background: url("https://raw.githubusercontent.com/EganStark/JellyfinOwnCustomizations/main/customlogojellyfin/sinsinema2.png") no-repeat left center !important;
-    background-size: 150px auto !important;
-    min-height: 40px !important;
-    width: 180px !important;
-    display: inline-block !important;
-}
+/* Give space for wide logo */
 
-/* hide stretched sidebar logo */
-.adminDrawerLogo img {
-    display: none !important;
+.pageTitleWithLogo {
+    width: 200px !important;
 }
