@@ -1,18 +1,31 @@
+/* Replace top-left Jellyfin icon */
+
 .imgLogoIcon {
-  content: url("https://cdn.jsdelivr.net/gh/EganStark/JellyfinOwnCustomizations@main/customlogojellyfin/sinsinema.png") !important;
+    content: url("https://cdn.jsdelivr.net/gh/EganStark/JellyfinOwnCustomizations@main/customlogojellyfin/sinsinema.png") !important;
+    height: 36px !important;
+    width: auto !important;
 }
+
+/* Replace sidebar logo */
 
 .adminDrawerLogo img {
-  content: url("https://cdn.jsdelivr.net/gh/EganStark/JellyfinOwnCustomizations@main/customlogojellyfin/sinsinema.png") !important;
+    content: url("https://cdn.jsdelivr.net/gh/EganStark/JellyfinOwnCustomizations@main/customlogojellyfin/sinsinema.png") !important;
+    height: 40px !important;
+    width: auto !important;
 }
+
+/* Header title area */
 
 .pageTitleWithLogo {
-  background-image: url("https://cdn.jsdelivr.net/gh/EganStark/JellyfinOwnCustomizations@main/customlogojellyfin/sinsinema.png") !important;
-  background-repeat: no-repeat !important;
-  background-position: left center !important;
-  background-size: 140px auto !important;
+    background-image: url("https://cdn.jsdelivr.net/gh/EganStark/JellyfinOwnCustomizations@main/customlogojellyfin/sinsinema.png") !important;
+    background-repeat: no-repeat !important;
+    background-position: left center !important;
+    background-size: 180px auto !important;
+    padding-left: 190px !important;
 }
 
+/* Hide Jellyfin text */
+
 .pageTitleWithLogo .pageTitle {
-  display: none !important;
+    display: none !important;
 }
