@@ -1,1 +1,19 @@
+/* Replace Jellyfin top logo */
 
+.pageTitleWithLogo {
+    background-image: url("https://raw.githubusercontent.com/EganStark/JellyfinOwnCustomizations/main/customlogojellyfin/sinsinema.png") !important;
+    background-repeat: no-repeat !important;
+    background-position: left center !important;
+    background-size: contain !important;
+}
+
+/* Hide Jellyfin text */
+.pageTitleWithLogo .pageTitle {
+    display: none !important;
+}
+
+/* Replace sidebar logo */
+
+.adminDrawerLogo img {
+    content: url("https://raw.githubusercontent.com/EganStark/JellyfinOwnCustomizations/main/customlogojellyfin/sinsinema.png") !important;
+}
