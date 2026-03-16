@@ -1,19 +1,22 @@
-/* Replace Jellyfin top logo */
+/* top-left logo */
+.imgLogoIcon {
+    content: url("https://cdn.jsdelivr.net/gh/EganStark/JellyfinOwnCustomizations@main/customlogojellyfin/sinsinema.png") !important;
+}
 
+/* drawer / sidebar logo */
+.adminDrawerLogo img {
+    content: url("https://cdn.jsdelivr.net/gh/EganStark/JellyfinOwnCustomizations@main/customlogojellyfin/sinsinema.png") !important;
+}
+
+/* page title logo area */
 .pageTitleWithLogo {
-    background-image: url("https://raw.githubusercontent.com/EganStark/JellyfinOwnCustomizations/main/customlogojellyfin/sinsinema.png") !important;
+    background-image: url("https://cdn.jsdelivr.net/gh/EganStark/JellyfinOwnCustomizations@main/customlogojellyfin/sinsinema.png") !important;
     background-repeat: no-repeat !important;
     background-position: left center !important;
-    background-size: contain !important;
+    background-size: 140px auto !important;
 }
 
-/* Hide Jellyfin text */
+/* hide Jellyfin text beside logo */
 .pageTitleWithLogo .pageTitle {
     display: none !important;
-}
-
-/* Replace sidebar logo */
-
-.adminDrawerLogo img {
-    content: url("https://raw.githubusercontent.com/EganStark/JellyfinOwnCustomizations/main/customlogojellyfin/sinsinema.png") !important;
 }
